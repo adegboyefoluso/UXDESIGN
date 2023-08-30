@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #033c81;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #6699cc;
+      color: white;
+    }
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type="text"] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ddd;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+
+      .topnav a,
+      .topnav input[type="text"],
+      .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+
+      .topnav input[type="text"] {
+        border: 1px solid #ccc;
+      }
+    }
+
+    .navimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+
+    /* 
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      } 
+
+        /* .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }  /* Create four equal columns that sits next to each other */
+    .size {
+      width: 400px;
+      height: 350px;
+      padding: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color: #033c81;
+      color: white;
+    }
+
+    .form {
+      background-color: #ddd;
+    }
+
+    .btnarea {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+  </style>
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <img class="navimg" src="images/logo.png" alt="company logo " width="500" height="200" />
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="dog.html">Dogs</a>
+      <a href="cat.html">Cats</a>
+      <a href="fish.html">Fish</a>
+      <!-- <a href="FAQ.html">FAQ</a> -->
+      <a class="active" href="consultation.html"> Consultation</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit">Fetch</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main class="form">
+    <h3 style="text-align: center">Consultation Form</h3>
+    <form style="padding-left: 16px; padding-right: 10px">
+      <div class="mb-3">
+        <label for="InputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Name" />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="name@example.com" />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="InputPhoneNumber" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="InputPhoneNumber" placeholder="Phone Number" />
+        <div id="phoneHelp" class="form-text">
+          We'll never share your Phone Number with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="InputName" class="form-label">Time Zone</label>
+        <select name="timezone_offset" id="timezone-offset" class="form-control">
+          <option value="none" selected disabled hidden>
+            ----Select an Option-----
+          </option>
+          <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+          <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+          <option value="-10:00">(GMT -10:00) Hawaii</option>
+          <option value="-09:50">(GMT -9:30) Taiohae</option>
+          <option value="-09:00">(GMT -9:00) Alaska</option>
+          <option value="-08:00">
+            (GMT -8:00) Pacific Time (US &amp; Canada)
+          </option>
+          <option value="-07:00">
+            (GMT -7:00) Mountain Time (US &amp; Canada)
+          </option>
+          <option value="-06:00">
+            (GMT -6:00) Central Time (US &amp; Canada), Mexico City
+          </option>
+          <option value="-05:00">
+            (GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima
+          </option>
+          <option value="-04:50">(GMT -4:30) Caracas</option>
+          <option value="-04:00">
+            (GMT -4:00) Atlantic Time (Canada), Caracas, La Paz
+          </option>
+          <option value="-03:50">(GMT -3:30) Newfoundland</option>
+          <option value="-03:00">
+            (GMT -3:00) Brazil, Buenos Aires, Georgetown
+          </option>
+          <option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+          <option value="-01:00">
+            (GMT -1:00) Azores, Cape Verde Islands
+          </option>
+          <option value="+00:00">
+            (GMT) Western Europe Time, London, Lisbon, Casablanca
+          </option>
+          <option value="+01:00">
+            (GMT +1:00) Brussels, Copenhagen, Madrid, Paris
+          </option>
+          <option value="+02:00">
+            (GMT +2:00) Kaliningrad, South Africa
+          </option>
+          <option value="+03:00">
+            (GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg
+          </option>
+          <option value="+03:50">(GMT +3:30) Tehran</option>
+          <option value="+04:00">
+            (GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi
+          </option>
+          <option value="+04:50">(GMT +4:30) Kabul</option>
+          <option value="+05:00">
+            (GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent
+          </option>
+          <option value="+05:50">
+            (GMT +5:30) Bombay, Calcutta, Madras, New Delhi
+          </option>
+          <option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+          <option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+          <option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+          <option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+          <option value="+08:00">
+            (GMT +8:00) Beijing, Perth, Singapore, Hong Kong
+          </option>
+          <option value="+08:75">(GMT +8:45) Eucla</option>
+          <option value="+09:00">
+            (GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk
+          </option>
+          <option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+          <option value="+10:00">
+            (GMT +10:00) Eastern Australia, Guam, Vladivostok
+          </option>
+          <option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+          <option value="+11:00">
+            (GMT +11:00) Magadan, Solomon Islands, New Caledonia
+          </option>
+          <option value="+11:50">(GMT +11:30) Norfolk Island</option>
+          <option value="+12:00">
+            (GMT +12:00) Auckland, Wellington, Fiji, Kamchatka
+          </option>
+          <option value="+12:75">(GMT +12:45) Chatham Islands</option>
+          <option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+          <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="InputName" class="form-label">Pet's Name</label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Pet's Name" />
+      </div>
+      <div class="mb-3">
+        <label for="InputName" class="form-label">Type of Animal </label>
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Type of Animal" />
+      </div>
+      <div class="mb-3">
+        <label for="InputName" class="form-label">Age </label>
+        <input type="number" class="form-control" id="exampleInputName" placeholder="Age of your Pet" />
+      </div>
+
+      <!-- <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div> -->
+      <button type="submit" class="btn btn-primary btnarea">Submit</button>
+    </form>
+  </main>
+</body>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>
+          Contact us<br />
+          <a style="color: azure" href="mailto:paradigmpet@example.com">paradigmpet@example.com</a>
+        </p>
+      </div>
+      <div class="col">
+        <div class="topnav">
+          <a href="index.html">Home</a>
+          <a href="dog.html">Dogs</a>
+          <a href="cat.html">Cats</a>
+          <a href="fish.html">Fish</a>
+          <!-- <a href="FAQ.html">FAQ</a> -->
+          <a class="active" href="consultation.html"> Consultation</a>
+          <!-- <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit">Fetch</button>
+            </form>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+</html>
