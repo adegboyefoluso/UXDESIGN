@@ -118,7 +118,7 @@
       /* Responsive layout - makes a two column-layout instead of four columns */
     </style>
 
-    <title>FAQ</title>
+    <title>Accomodation</title>
   </head>
 
   <body>
@@ -127,8 +127,8 @@
       <a href="Dinning.html">Dining</a>
       <a href="accomodation.html">Accomodation</a>
       <a href="Attraction .html">Attraction</a>
-      <a href="Transportation.html">Transportation</a>
-      <a class="active" href="FAQ.html">FAQ</a>
+      <a class="active" href="Transportation.html">Transportation</a>
+      <a href="FAQ.html">FAQ</a>
       <!-- <a href="consultation.html"> Consultation</a> -->
       <div class="search-container">
         <form action="/action_page.php">
@@ -137,89 +137,64 @@
         </form>
       </div>
     </div>
-    <main style="text-align: center; margin: 2%">
-      <div class="faq-section">
-        <h2 style="text-align: center; margin: 20px">
-          Frequently Asked Questions
-        </h2>
+    <main>
+      <div style="margin: 20px">
+        <h3 style="text-align: center"><strong>Transportation</strong></h3>
         <hr />
-        <div class="faq-item">
-          <h3 class="faq-question">
-            What power outlets are standard on the island?
-          </h3>
-          <p class="faq-answer">
-            Power outlets are 120 volts (the same as in the United States).
-          </p>
+      </div>
+
+      <div style="margin-bottom: 50px">
+        <p style="text-align: center">
+          Almost all visitors arrive to Taniti by air, though some arrive on a
+          small cruise ship that docks in Yellow Leaf Bay for one night per
+          week. Taniti is served by a small airport that can accommodate small
+          jets and propeller planes. Taniti is in the process of expanding the
+          airport so larger jets will be able to land on the island within the
+          next few years.
+        </p>
+      </div>
+      <div class="container dogimage">
+        <div class="row">
+          <div class="col">
+            <img class="size" src="images/boat.jpg" alt="boat image" />
+          </div>
+          <div class="col">
+            <img class="size" src="images/boat 1.jpg" alt="Cat Image" />
+          </div>
+
+          <div class="col">
+            <img class="size" src="images/heli1.jpg" alt="Cat Image" />
+          </div>
         </div>
-        <div class="faq-item">
-          <h3 class="faq-question">Drinking alcohol on the island?</h3>
-          <p class="faq-answer">
-            Alcohol is not allowed to be served or sold between the hours of
-            midnight and 9:00 a.m.
-            <br />
-            The drinking age on Taniti is 18 and the drinking age is not
-            strictly enforced. Yes, we offer international shipping to select
-            countries.
-          </p>
+      </div>
+      <h3 style="text-align: center">Ground Transportation</h3>
+      <hr />
+      <div style="margin-bottom: 50px">
+        <p style="text-align: center">
+          Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every
+          day. Private buses serve the rest of the island. Taxis are available
+          in Taniti City, and rental cars can be rented from a local rental
+          agency near the airport. Bikes and helmets are available to rent from
+          several vendors (helmets are required by law). Taniti City is fairly
+          flat and very walkable. Many tourists stay in the area surrounding
+          Merriton Landing: this area is easy to explore on foot.
+        </p>
+      </div>
+      <div class="container dogimage">
+        <div class="row">
+          <div class="col">
+            <img class="size" src="images/bus 2.jpg" alt="CatImage" />
+          </div>
+          <div class="col">
+            <img class="size" src="images/bus3.jpg" alt="Cat Image" />
+          </div>
+
+          <div class="col">
+            <img class="size" src="images/bike.jpg" alt="Cat Image" />
+          </div>
         </div>
-        <div class="faq-item">
-          <h3 class="faq-question">
-            What is the official language of the island?
-          </h3>
-          <p class="faq-answer">
-            Many younger Tanitians speak fluent English. Very little English is
-            spoken in rural areas, especially by the older residents.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">Are there any hospitals?</h3>
-          <p class="faq-answer">
-            There is one hospital and several clinics. The hospital has many
-            multilingual employees.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">
-            Is there crime on Taniti? Is it a safe place to visit?
-          </h3>
-          <p class="faq-answer">
-            Violent crime is very rare on Taniti, but as tourism increases,
-            there are more reports of pickpocketing and other petty crimes.
-          </p>
-        </div>
-        <div class="faq-item !important">
-          <h3 class="faq-question !important">
-            Island holidays and business closures.
-          </h3>
-          <p class="faq-answer !important">
-            Taniti enjoys a large number of national holidays, and many tourist
-            attractions and restaurants will be closed on holidays, so visitors
-            should plan accordingly
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question !important">
-            What is the local currency and are there any banks and exchanges on
-            the island?
-          </h3>
-          <p class="faq-answer">
-            Taniti uses the U.S. dollar as its currency, but many businesses
-            will also accept euros and yen. Several banks facilitate currency
-            exchange, and many businesses accept major credit cards.
-          </p>
-        </div>
-        <!-- Add more FAQ items as needed -->
       </div>
     </main>
-    <script>
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-          const answer = question.nextElementSibling;
-          answer.style.display =
-            answer.style.display === "block" ? "none" : "block";
-        });
-      });
-    </script>
   </body>
 
   <footer>

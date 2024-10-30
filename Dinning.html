@@ -118,17 +118,19 @@
       /* Responsive layout - makes a two column-layout instead of four columns */
     </style>
 
-    <title>FAQ</title>
+    <title>Dog</title>
   </head>
 
   <body>
+   
+
     <div class="topnav sticky-top">
       <a href="index.html">Home</a>
-      <a href="Dinning.html">Dining</a>
-      <a href="accomodation.html">Accomodation</a>
+      <a  class="active" href="Dinning.html">Dining</a>
+      <a href="accomodation.html">Accomodation </a>
       <a href="Attraction .html">Attraction</a>
       <a href="Transportation.html">Transportation</a>
-      <a class="active" href="FAQ.html">FAQ</a>
+      <a href="FAQ.html">FAQ</a>
       <!-- <a href="consultation.html"> Consultation</a> -->
       <div class="search-container">
         <form action="/action_page.php">
@@ -137,89 +139,69 @@
         </form>
       </div>
     </div>
-    <main style="text-align: center; margin: 2%">
-      <div class="faq-section">
-        <h2 style="text-align: center; margin: 20px">
-          Frequently Asked Questions
-        </h2>
-        <hr />
-        <div class="faq-item">
-          <h3 class="faq-question">
-            What power outlets are standard on the island?
-          </h3>
-          <p class="faq-answer">
-            Power outlets are 120 volts (the same as in the United States).
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">Drinking alcohol on the island?</h3>
-          <p class="faq-answer">
-            Alcohol is not allowed to be served or sold between the hours of
-            midnight and 9:00 a.m.
-            <br />
-            The drinking age on Taniti is 18 and the drinking age is not
-            strictly enforced. Yes, we offer international shipping to select
-            countries.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">
-            What is the official language of the island?
-          </h3>
-          <p class="faq-answer">
-            Many younger Tanitians speak fluent English. Very little English is
-            spoken in rural areas, especially by the older residents.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">Are there any hospitals?</h3>
-          <p class="faq-answer">
-            There is one hospital and several clinics. The hospital has many
-            multilingual employees.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">
-            Is there crime on Taniti? Is it a safe place to visit?
-          </h3>
-          <p class="faq-answer">
-            Violent crime is very rare on Taniti, but as tourism increases,
-            there are more reports of pickpocketing and other petty crimes.
-          </p>
-        </div>
-        <div class="faq-item !important">
-          <h3 class="faq-question !important">
-            Island holidays and business closures.
-          </h3>
-          <p class="faq-answer !important">
-            Taniti enjoys a large number of national holidays, and many tourist
-            attractions and restaurants will be closed on holidays, so visitors
-            should plan accordingly
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question !important">
-            What is the local currency and are there any banks and exchanges on
-            the island?
-          </h3>
-          <p class="faq-answer">
-            Taniti uses the U.S. dollar as its currency, but many businesses
-            will also accept euros and yen. Several banks facilitate currency
-            exchange, and many businesses accept major credit cards.
-          </p>
-        </div>
-        <!-- Add more FAQ items as needed -->
+    <img
+      src="images/Restaurant images.jpg"
+      alt="Description of image"
+      style="width: 100%; height: 700px"
+    />
+
+    <main style="padding-left: 16px; padding-right: 10px">
+      <div style="padding-left: 16px">
+        <h1 style="text-align: center">Food & Dining</h1>
       </div>
+
+      <!-- <main style="padding-left: 16px; padding-right: 10px"> -->
+
+      <h3 style="text-align: center">Restaurant</h3>
+      <hr />
+
+      <div>
+        <p style="text-align: center;">
+          Taniti currently has 10 restaurants: five serve mostly local fish and
+          rice, three serve American-style meals, and two serve Pan-Asian
+          cuisine.You can find them in town and on the beach.
+        </p>
+      </div>
+
+      <div class="container dogimage">
+        <div class="row">
+          <div class="col">
+            <img class="size" src="images/rest1.jpg" alt="Dog Image" />
+          </div>
+          <div class="col">
+            <img class="size" src="images/rest2.jfif" alt="Dog Image" />
+          </div>
+
+          <div class="col">
+            <img class="size" src="images/rest3.jpg" alt="Dog Image" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 style="text-align: center">Grocery stores</h3>
+        <hr />
+        <p style="text-align: center;">
+          Taniti has two supermarkets, two smaller grocery stores, and one
+          convenience store that is open 24 hours a day.
+        </p>
+      </div>
+
+      <div class="container dogimage">
+        <div class="row">
+          <div class="col">
+            <img class="size" src="images/grocery1.jpg" alt="Dog Image" />
+          </div>
+          <div class="col">
+            <img class="size" src="images/grocery2.jpg" alt="Dog Image" />
+          </div>
+
+          <div class="col">
+            <img class="size" src="images/rest3.jpg" alt="Dog Image" />
+          </div>
+        </div>
+      </div>
+      <div>
     </main>
-    <script>
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-          const answer = question.nextElementSibling;
-          answer.style.display =
-            answer.style.display === "block" ? "none" : "block";
-        });
-      });
-    </script>
   </body>
 
   <footer>
@@ -239,8 +221,8 @@
             <a href="Dinning.html">Dining</a>
             <a href="accomodation.html">Accomodation</a>
             <a href="Attraction .html">Attraction</a>
-            <a href="Transportation.html">Attraction</a>
-            <a href="FAQ.html">FAQ</a>
+            <a href="Transportation.html">Transportation</a>
+             <a href="FAQ.html">FAQ</a> 
             <!-- <a href="consultation.html"> Consultation</a> -->
             <!-- <div class="search-container">
             <form action="/action_page.php">

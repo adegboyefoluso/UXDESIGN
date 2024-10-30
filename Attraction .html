@@ -118,17 +118,17 @@
       /* Responsive layout - makes a two column-layout instead of four columns */
     </style>
 
-    <title>FAQ</title>
+    <title>Accomodation</title>
   </head>
 
   <body>
     <div class="topnav sticky-top">
       <a href="index.html">Home</a>
       <a href="Dinning.html">Dining</a>
-      <a href="accomodation.html">Accomodation</a>
-      <a href="Attraction .html">Attraction</a>
+      <a href="accomodation.html">Accomodation </a>
+      <a class="active" href="Attraction .html">Attraction</a>
       <a href="Transportation.html">Transportation</a>
-      <a class="active" href="FAQ.html">FAQ</a>
+      <a href="FAQ.html">FAQ</a>
       <!-- <a href="consultation.html"> Consultation</a> -->
       <div class="search-container">
         <form action="/action_page.php">
@@ -137,89 +137,66 @@
         </form>
       </div>
     </div>
-    <main style="text-align: center; margin: 2%">
-      <div class="faq-section">
-        <h2 style="text-align: center; margin: 20px">
-          Frequently Asked Questions
-        </h2>
+    <main>
+      <div style="margin: 20px">
+        <h3 style="text-align: center"><strong>Entertainment</strong></h3>
         <hr />
-        <div class="faq-item">
-          <h3 class="faq-question">
-            What power outlets are standard on the island?
-          </h3>
-          <p class="faq-answer">
-            Power outlets are 120 volts (the same as in the United States).
-          </p>
+      </div>
+
+      <div style="margin-bottom: 50px">
+        <p style="text-align: center">
+          Most people visit Taniti to enjoy the beaches, explore the rainforest,
+          and to visit the volcano. However, there are other things to do,
+          including visiting a local history museum, going on chartered fishing
+          tours, snorkeling, zip-lining in the rainforest, visiting several
+          pubs, including a microbrewery, dancing at a new dance club, seeing a
+          movie, taking helicopter rides, playing at an arcade, visiting art
+          galleries, and bowling. Also, a nine-hole golf course should be
+          operational by next year. Many of these activities are located in
+          Merriton Landing, which is a rapidly developing area on the north side
+          of Yellow Leaf Bay
+        </p>
+      </div>
+      <div class="container dogimage">
+        <div class="row">
+          <div class="col">
+            <img class="size" src="images/snokelling.jpg" alt="CatImage" />
+          </div>
+          <div class="col">
+            <img class="size" src="images/museum.jpg" alt="Cat Image" />
+          </div>
+
+          <div class="col">
+            <img class="size" src="images/zipline.jpg" alt="Cat Image" />
+          </div>
         </div>
-        <div class="faq-item">
-          <h3 class="faq-question">Drinking alcohol on the island?</h3>
-          <p class="faq-answer">
-            Alcohol is not allowed to be served or sold between the hours of
-            midnight and 9:00 a.m.
-            <br />
-            The drinking age on Taniti is 18 and the drinking age is not
-            strictly enforced. Yes, we offer international shipping to select
-            countries.
-          </p>
+      </div>
+      <h3 style="text-align: center">Sightseeing</h3>
+      <hr />
+      <div style="margin-bottom: 50px">
+        <p style="text-align: center">
+          Most tourists spend most of their time in Taniti City, which boasts
+          native architecture and nearby white, sandy beaches that encircle
+          Yellow Leaf Bay. Other popular activities include boat or bus tours of
+          the island, hikes in the rainforest, or visits to Taniti’s active
+          volcano.
+        </p>
+      </div>
+      <div class="container dogimage">
+        <div class="row">
+          <div class="col">
+            <img class="size" src="images/boat.jpg" alt="CatImage" />
+          </div>
+          <div class="col">
+            <img class="size" src="images/forest.jpg" alt="Cat Image" />
+          </div>
+
+          <div class="col">
+            <img class="size" src="images/beach.jpg" alt="Cat Image" />
+          </div>
         </div>
-        <div class="faq-item">
-          <h3 class="faq-question">
-            What is the official language of the island?
-          </h3>
-          <p class="faq-answer">
-            Many younger Tanitians speak fluent English. Very little English is
-            spoken in rural areas, especially by the older residents.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">Are there any hospitals?</h3>
-          <p class="faq-answer">
-            There is one hospital and several clinics. The hospital has many
-            multilingual employees.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question">
-            Is there crime on Taniti? Is it a safe place to visit?
-          </h3>
-          <p class="faq-answer">
-            Violent crime is very rare on Taniti, but as tourism increases,
-            there are more reports of pickpocketing and other petty crimes.
-          </p>
-        </div>
-        <div class="faq-item !important">
-          <h3 class="faq-question !important">
-            Island holidays and business closures.
-          </h3>
-          <p class="faq-answer !important">
-            Taniti enjoys a large number of national holidays, and many tourist
-            attractions and restaurants will be closed on holidays, so visitors
-            should plan accordingly
-          </p>
-        </div>
-        <div class="faq-item">
-          <h3 class="faq-question !important">
-            What is the local currency and are there any banks and exchanges on
-            the island?
-          </h3>
-          <p class="faq-answer">
-            Taniti uses the U.S. dollar as its currency, but many businesses
-            will also accept euros and yen. Several banks facilitate currency
-            exchange, and many businesses accept major credit cards.
-          </p>
-        </div>
-        <!-- Add more FAQ items as needed -->
       </div>
     </main>
-    <script>
-      document.querySelectorAll(".faq-question").forEach((question) => {
-        question.addEventListener("click", () => {
-          const answer = question.nextElementSibling;
-          answer.style.display =
-            answer.style.display === "block" ? "none" : "block";
-        });
-      });
-    </script>
   </body>
 
   <footer>
@@ -239,7 +216,7 @@
             <a href="Dinning.html">Dining</a>
             <a href="accomodation.html">Accomodation</a>
             <a href="Attraction .html">Attraction</a>
-            <a href="Transportation.html">Attraction</a>
+            <a href="Transportation.html">Transportation</a>
             <a href="FAQ.html">FAQ</a>
             <!-- <a href="consultation.html"> Consultation</a> -->
             <!-- <div class="search-container">
